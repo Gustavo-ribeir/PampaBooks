@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PampaBooks - <%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/css/style.css' />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="menuInicial">
+              <a href="/"><img src="/images/logo.png" alt="Ir para Home"></a>
+  
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Departamentos
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Ficção</a></li>
+                  <li><a class="dropdown-item" href="#">Não-Ficção</a></li>
+                  <li><a class="dropdown-item" href="#">Infantil</a></li>
+                  <li><a class="dropdown-item" href="#">Cientifico</a></li>
+                </ul>
+  
+              </div>
+                <form action="/search" method="GET">
+                  <input type="text" name="q" placeholder="Buscar livros..." />
+                  <button type="submit">Pesquisar</button>
+                </form>
+              
+              <a href="contato">Contato</a>
+              <a href="about">Quem Somos</a>
+          </div>
+          <div class="menuInicialPerfil">
+            <a href="/cart" class="cart-icon" title="Carrinho">
+              <img src="/images/cart-icon.png" alt="Carrinho">
+              <span class="cart-count">0</span>
+            </a>
+            <a href="profile" title="Perfil">
+              <img src="/images/profileicon.png" alt="Ir para perfil">
+            </a>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <%- body %>
+      </main>
+
+      <footer>
+        <div class="container">
+          <div class="footer-section">
+            <div class="departamentos">
+              <h4>Departamentos</h4>
+              <ul>
+                <li><a href="/categoria/ficcao">Ficção</a></li>
+                <li><a href="/categoria/nao-ficcao">Não-ficção</a></li>
+                <li><a href="/categoria/infantil">Infantil</a></li>
+                <li><a href="/categoria/cientifico">Científico</a></li>
+              </ul>
+            </div>
+      
+            <div class="contato">
+              <h4>Contato</h4>
+              <p>Email: contato@pampabooks.com</p>
+              <p>Telefone: (54) 3223-4568</p>
+              <p>Endereço: Rua dos Livros, 5453, Caxias do Sul, RS</p>
+            </div>
+      
+            <div class="redes-sociais">
+              <h4>Redes Sociais</h4>
+              <ul>
+                <li><a href="https://www.facebook.com"><img src="/images/facebook.png" alt="Facebook"></a></li>
+                <li><a href="https://www.instagram.com"><img src="/images/instagram.png" alt="Instagram"></a></li>
+                <li><a href="https://www.twitter.com"><img src="/images/twitter.png" alt="Twitter"></a></li>
+              </ul>
+            </div>
+          </div>
+      
+          <div class="footer-bottom">
+            <p>&copy; 2024 PampaBooks. Todos os direitos reservados.</p>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

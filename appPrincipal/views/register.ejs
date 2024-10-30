@@ -1,0 +1,23 @@
+<main class="register-container">
+        <section class="register-form">
+            <h1>Registrar</h1>
+            <form id="registerForm">
+                <div>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Registrar</button>
+            </form>
+            <div id="errorMessage" class="error-message" style="display: none;"></div>
+            <p class="login-link">Já tem uma conta? <a href="/login">Faça login</a></p>
+        </section>
+    </main>
+    <script src="/javascripts/register.js"></script>

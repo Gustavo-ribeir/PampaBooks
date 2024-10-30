@@ -1,0 +1,44 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: aplicacao-pod
+spec:
+  containers:
+    - name: auth
+      image: :latest
+      ports:
+        - containerPort: 6690
+      volumeMounts:
+        - name: trabGB
+          mountPath: /app/auth
+    - name: product
+      image: :latest
+      ports:
+        - containerPorts: 6691
+      volumeMounts: 
+        - name: trabGB
+          mountPath: /app/products
+    - name: order
+      image: localhost/order-service:latest
+      ports:
+        - containerPorts: 6691
+      volumeMounts: 
+        - name: trabGB
+          mountPath: /app/products
+    - name: mongoDB
+      image: mongo:latest
+      ports: 
+        - containerPorts: 27017
+      volumeMount: 
+        - name: mongoDB
+          mounthPath: /data/db
+  volumes:
+    - name: trabGB
+      hostPath: 
+        path: /home/gus/.local/share/containers/storage/volumes/trabGB/_data
+    - name: mongoDB
+      hostPath:
+        path: /home/gus/.local/share/containers/storage/volumes/mongoDB/_data
+        
+
+      

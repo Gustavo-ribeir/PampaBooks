@@ -1,5 +1,3 @@
-Aqui está o conteúdo completo, incluindo a seção **Instruções de Uso** e as subseções em um único bloco para copiar e colar no seu `README.md`:
-
 ```markdown
 <h1 align="center">Welcome to PampaBooks 👋</h1>
 <p>
@@ -8,7 +6,7 @@ Aqui está o conteúdo completo, incluindo a seção **Instruções de Uso** e a
 
 > Disciplina Projeto Web
 
-### 🏠 [Homepage](https://github.com/Gustav-ribeir/PampaBooks)
+### 🏠 [Homepage](https://github.com/Gustavo-ribeir/PampaBooks)
 
 ## Descrição
 
@@ -27,7 +25,7 @@ O projeto está organizado em microsserviços, cada um com uma responsabilidade 
 ## Pré-requisitos
 
 - **Node.js** (versão 20.16.0)
-- **Docker** e **Docker Compose**
+- **Podman** e **Podman Desktop**
 - **MongoDB** como banco de dados
 - **Kubernetes** (para orquestração)
 
@@ -90,7 +88,7 @@ Se preferir iniciar cada serviço individualmente sem Docker ou Kubernetes, use 
 
 - **Backend**: Node.js, Express
 - **Banco de Dados**: MongoDB
-- **Orquestração**: Docker, Kubernetes
+- **Orquestração**: Podman, Kubernetes
 - **Autenticação**: JWT
 - **Frontend**: EJS para renderização de páginas dinâmicas
 
@@ -98,11 +96,9 @@ Se preferir iniciar cada serviço individualmente sem Docker ou Kubernetes, use 
 
 👤 **Gustavo Ribeiro**
 
-* Github: [@Gustav-ribeir](https://github.com/Gustav-ribeir)
+* Github: [@Gustavo-ribeir](https://github.com/Gustavo-ribeir)
 
 ## Mostre seu apoio
 
 Dê uma ⭐️ se você gostou deste projeto!
 ```
-
-Agora o conteúdo está completo e pronto para ser copiado e colado no seu `README.md`.
